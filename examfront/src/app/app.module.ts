@@ -16,6 +16,9 @@ import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     NavbarComponent,
     FooterComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,8 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     MatSnackBarModule,
     MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [
     provideAnimationsAsync()
